@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodega</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <section id="mainForm"> 
+        <h1><strong>Bodega</strong></h1>
+        <table id="mainForm_tabla">
+            <tr>
+                <th>Cedula</th>
+                <th>Denominacion</th>
+                <th>Cantidad</th>
+                <th>Monto Cuenta</th>
+            </tr>
+        </table>
+        <h4>Monto final de billetes de $10: <span id="mainForm_b10"></span></h4>
+        <h4>Monto final de billetes de $20: <span id="mainForm_b20"></span></h4>
+        <h4>Monto final de billetes de $50: <span id="mainForm_b50"></span></h4>
+        <h4>Al bodeguero le queda un monto total de: <span id="mainForm_montT"></span></h4>
+        <button id="mainForm_agregarCliente">Agregar Cliente</button>
+    </section>
+
+    <section id="clienteForm">
+        <h3>Datos Cliente</h3>
+        <input type="text" id="clienteForm_inCedula" placeholder="Cedula"></input> <br>
+        <input type="text" id="clienteForm_inDenominacion" placeholder="Denominacion"></input><br>
+        <input type="text" id="clienteForm_inCantidad" placeholder="Cantidad"></input><br>
+        <button id="clienteForm_btAceptar">Aceptar</button>
+    </section>
+</body>
+<script type="module">
+    import Cl_controlador from "./Cl_controlador.js";
+    new Cl_controlador()
+</script>
+</html>

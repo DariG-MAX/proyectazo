@@ -1,0 +1,16 @@
+ 
+ table{ /*whdth:100%;*/
+}
+table,
+th,
+td{
+    border: 1px solid black;
+    text-align: center;
+}
+imput {
+    display: block;
+}
+section {
+    border: 1px solid black;
+    margin-top: 10px;
+}
